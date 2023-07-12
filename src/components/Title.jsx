@@ -1,12 +1,3 @@
-import PropTypes from 'prop-types';
-
-Title.propTypes = {
-  children: PropTypes.node,
-  color: PropTypes.string,
-  fontSize: PropTypes.string,
-  onClick: PropTypes.func,
-};
-
 function Title({
   children,
   color,
