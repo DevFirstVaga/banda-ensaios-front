@@ -1,11 +1,10 @@
-import Title from "../components/Title";
+import BandArt from "../components/BandArt";
+
 
 function Home() {
   return (
-    <Title
-    >
-      Título
-    </Title>
+    <BandArt 
+    />
   )
 }
 
