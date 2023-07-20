@@ -1,10 +1,10 @@
 import BandArt from "../components/BandArt";
 
 
+
 function Home() {
   return (
-    <BandArt 
-    />
+      <BandArt />
   )
 }
 
