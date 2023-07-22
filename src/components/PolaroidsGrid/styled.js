@@ -20,10 +20,7 @@ export const PolaroidImg = styled.img`
 `
 
 export const PolaroidWrapper = styled.div`
-  ${({
-  transform,
-  zIndex,
-}) => css`
+  ${({ transform }) => css`
     display: grid;
     justify-content: center;
     align-items: center;
@@ -35,6 +32,5 @@ export const PolaroidWrapper = styled.div`
     border-radius: 4px;
     box-sizing: content-box;
     transform: ${transform};
-    z-index: ${zIndex};
   `}
 `
