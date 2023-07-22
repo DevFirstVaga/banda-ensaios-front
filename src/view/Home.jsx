@@ -1,10 +1,10 @@
-import BandArt from "../components/BandArt";
-
-
+import PolaroidsGrid from "../components/PolaroidsGrid";
 
 function Home() {
   return (
-      <BandArt />
+    <>
+      <PolaroidsGrid />
+    </>
   )
 }
 
