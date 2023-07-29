@@ -12,7 +12,7 @@ export const Navbar = styled.div`
 /*BURGUER - HEADER */
 export const Burguer = styled.div`
 
-@media (max-width:500px){
+@media (min-width:200px){
     background-color:transparent;
     width:30px;
     height:30px;
@@ -27,7 +27,7 @@ export const Burguer = styled.div`
     cursor:pointer;
 }
 
-@media (min-width:375px){
+@media (max-width:2150px){
     background-color:transparent;
     width:30px;
     height:30px;
@@ -52,7 +52,6 @@ export const Line01 = styled.div`
 
 export const Line02 = styled.div`
     background-color:white; width:30px; height:2px;
-
  `;
 
 export const Line03 = styled.div`
@@ -86,7 +85,7 @@ export const Box = styled.div`
 
     width:100vh;
     margin-left:50%;
-    margin-top:-12%;
+    
     min-height:120vh;
     z-index:2;
     cursor:default;
@@ -99,7 +98,7 @@ export const Box = styled.div`
 
     width:100vh;
     margin-left:50%;
-    margin-top:-12%;
+    
     min-height:120vh;
     z-index:2;
     cursor:default;
@@ -107,12 +106,12 @@ export const Box = styled.div`
 `;
 
 export const DarkPanel = styled.div`
-    width:100vh;
+    width:400vh;
     height:150vh;
     margin-left:-50vh;
     margin-top:-150%;
     position:absolute;
-    background-color:black;
+    background-color:#000000AA;
 `;
 
 export const ImagemConjunto = styled.img`
@@ -149,7 +148,7 @@ export const ImagemConjunto = styled.img`
     width:100%;
     height:50vh;
     margin-top:40%;
-    margin-left:-10%;
+    margin-left:0%;
     vertical-align:middle;
 }
 
@@ -157,22 +156,22 @@ export const ImagemConjunto = styled.img`
     width:100%;
     height:50vh;
     margin-top:40%;
-    margin-left:-10%;
+    margin-left:0%;
     vertical-align:middle;
+    position:relative;
 }
 `;
 
 export const BotaoSobre = styled.button`
-@media(max-width:500px){
+@media(min-width:200px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.5rem 1rem 0.5rem 1rem;
-    right:8rem;
     transform:rotate(-30deg) translate(0%, 75vh);
     
     &:before{
@@ -187,8 +186,8 @@ export const BotaoSobre = styled.button`
 
         transform:translate(-50%, -50%);
 
-        width:100%;
-        height:100%;
+        width:300%;
+        height:400%;
 
         background: pink;
 
@@ -204,24 +203,22 @@ export const BotaoSobre = styled.button`
 
     &:hover{
         &:before{
-            width:100%;
+            width:300%;
             opacity:0;
         }
     }
 }
 
-@media(min-width:280px){
+@media(max-width:1024px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
-    
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.5rem 1rem 0.5rem 1rem;
-    right:3.5rem;
-    transform:rotate(-30deg) translate(0%, 63vh);
+    transform:rotate(-30deg) translate(4.7rem, -5.9rem);
     
     &:before{
         content:'';
@@ -232,247 +229,11 @@ export const BotaoSobre = styled.button`
         border-top-right-radius:50px;
         border-bottom-left-radius:50px;
         border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:360px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:7.2rem;
-    transform:rotate(-30deg) translate(0%, 74.5vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-        }
-    }
-}
-
-@media(min-width:375px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    border-radius:50px;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:6.3rem;
-    transform:rotate(-30deg) translate(0%, 74.5vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        border-radius:3px;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background:pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0%;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:390px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:8.2rem;
-    transform:rotate(-30deg) translate(0%, 74.5vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
 
         transform:translate(-50%, -50%);
 
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:20vh;
-        height:15vh;
-
-        background:pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:412px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:9.2rem;
-    transform:rotate(-30deg) translate(0%, 74.5vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background:pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:414px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:8.7rem;
-    transform:rotate(-30deg) translate(0%, 74.5vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        border-radius:3px;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:15vh;
-        height:15vh;
+        width:300%;
+        height:400%;
 
         background: pink;
 
@@ -488,195 +249,7 @@ export const BotaoSobre = styled.button`
 
     &:hover{
         &:before{
-            width:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:540px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:7.3rem;
-    transform:rotate(-30deg) translate(0%, 74vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:15vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-    }
-
-    &:hover{
-        &:before{
-            width:15vh;
-        }
-    }
-}
-
-@media(min-width:768px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:21rem;
-    transform:rotate(-30deg) translate(0%, 86vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media(min-width:820px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:24rem;
-    transform:rotate(-30deg) translate(0%, 86vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
-        }
-    }
-}
-
-@media(min-width:912px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:28rem;
-    transform:rotate(-30deg) translate(0%, 86vh);
-    
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: pink;
-
-        z-index:-1;
-        transition:all 0.7s;
-
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            width:20vh;
+            width:300%;
             opacity:0;
         }
     }
@@ -686,18 +259,18 @@ export const BotaoSobre = styled.button`
 
 export const BotaoHome = styled.button`
 
-@media (max-width:500px){
+@media (min-width:200px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-7.4rem;
-    transform:rotate(-30deg) translate(0%, 72vh);
-
+    transform:rotate(-30deg) translate(30rem, 1.8rem);
+    z-index:200;
+    
     &:before{
         content:'';
         position:absolute;
@@ -708,42 +281,41 @@ export const BotaoHome = styled.button`
         border-bottom-left-radius:50px;
         border-bottom-right-radius:50px;
         transform:translate(-50%, -50%);
-
-        width:100%;
-        height:100%;
-
+    
+        width:300%;
+        height:350%;
+    
         background: rgb(143, 203, 238);
-
+    
         z-index:-1;
         transition:all 0.7s;
     }
-
+    
     &:before{
         height:0%;
         opacity:1;
     }
-
+    
     &:hover{
         &:before{
-            height:100%;
+            height:350%;
             opacity:0;
         }
     }
 }
 
-@media (min-width:280px){
+@media (max-width:1024px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
+    cursor:pointer;
+    position:relative;
+    padding:0.5rem 1.4rem 0.5rem 1.4rem;
+    transform:rotate(-30deg) translate(20rem, 2rem);
+    z-index:200;
     
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-8.5rem;
-    transform:rotate(-30deg) translate(0%, 60vh);
-
     &:before{
         content:'';
         position:absolute;
@@ -754,469 +326,57 @@ export const BotaoHome = styled.button`
         border-bottom-left-radius:50px;
         border-bottom-right-radius:50px;
         transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
+    
+        width:300%;
+        height:400%;
+    
         background: rgb(143, 203, 238);
-
+    
         z-index:-1;
         transition:all 0.7s;
     }
-
-    &:before{
-        height:0vh;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-        }
-    }
-}
-
-@media (min-width:360px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-6.9rem;
-    transform:rotate(-30deg) translate(0%, 72vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background: rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-        }
-    }
-}
-
-@media (min-width:375px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid orange;
-    border-radius:50px;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-6.5rem;
-    transform:rotate(-30deg) translate(0%, 71vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background:rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
+    
     &:before{
         height:0%;
         opacity:1;
     }
-
-    &:hover{
-        &:before{
-            opacity:0;
-            height:20vh;
-        }
-    }
-}
-
-@media (min-width:390px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-  
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-7.4rem;
-    transform:rotate(-30deg) translate(0%, 72vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background: rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:412px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
     
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-8.1rem;
-    transform:rotate(-30deg) translate(0%, 72vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background: rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
     &:hover{
         &:before{
-            height:20vh;
+            height:400%;
             opacity:0;
         }
     }
 }
 
-@media (min-width:414px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-7.8rem;
-    transform:rotate(-30deg) translate(0%, 72vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:15vh;
-        height:20vh;
-
-        background: rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:540px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:-6.8rem;
-    transform:rotate(-30deg) translate(0%, 70vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:15vh;
-
-        background: rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-        }
-    }
-}
-
-@media (min-width:768px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:1rem;
-    transform:rotate(-30deg) translate(0%, 82.5vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background: rgb(143, 203, 238);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:820px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:2rem;
-    transform:rotate(-30deg) translate(0%, 82.5vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background:rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:912px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1.4rem 0.5rem 1.4rem;
-    right:2rem;
-    transform:rotate(-30deg) translate(0%, 83vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:20vh;
-        height:20vh;
-
-        background:rgb(143, 203, 238);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
 `;
 
 export const BotaoLineUp = styled.button`
-@media (max-width:500px){
+@media (min-width:200px){
     
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:8.5rem;
-    transform:rotate(-30deg) translate(0%, 55vh);
+    transform:rotate(-30deg) translate(20rem, 4rem);
 
     &:before{
         content:'';
         position:absolute;
-        top:0%;
-        left:0%;
+        top:50%;
+        left:50%;
 
         border-top-left-radius:50px;
         border-top-right-radius:50px;
         border-bottom-left-radius:50px;
         border-bottom-right-radius:50px;
+        transform:translate(-50%, -50%);
+
         width:0%;
-        height:100%;
+        height:300%;
 
         background: rgb(233, 226, 163);
         z-index:-1;
@@ -1230,66 +390,22 @@ export const BotaoLineUp = styled.button`
     }
 }
 
-@media (min-width:280px){
+@media (max-width:1024px){
     
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:4rem;
-    transform:rotate(-30deg) translate(0%, 43vh);
+    transform:rotate(-30deg) translate(0.1rem, -17rem);
 
     &:before{
         content:'';
         position:absolute;
         top:50%;
         left:50%;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:0vh;
-        height:10vh;
-
-        background:rgb(233, 226, 163);
-
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:hover{
-        &:before{
-            width:10vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:360px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    border-left:5px;
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:7.5rem;
-    transform:rotate(-30deg) translate(0%, 54vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        width:15vh;
-        height:10vh;
 
         border-top-left-radius:50px;
         border-top-right-radius:50px;
@@ -1297,336 +413,17 @@ export const BotaoLineUp = styled.button`
         border-bottom-right-radius:50px;
         transform:translate(-50%, -50%);
 
-        background:rgb(233, 226, 163);
+        width:0%;
+        height:300%;
+
+        background: rgb(233, 226, 163);
         z-index:-1;
         transition:all 0.7s;
     }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
     &:hover{
         &:before{
-            width:15vh;
+            width:200%;
             opacity:0;
-        }
-    }
-}
-
-@media (min-width:375px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:6.5rem;
-    transform:rotate(-30deg) translate(0%, 54vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:40%;
-        left:50%;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        width:15vh;
-        height:10vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:390px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    border-left:5px;
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:9rem;
-    transform:rotate(-30deg) translate(0%, 55vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:15vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-        }
-    }
-}
-
-@media (min-width:412px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:9.7rem;
-    transform:rotate(-30deg) translate(0%, 55vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-
-        background:rgb(233, 226, 163);
-        width:0vh;
-        height:15vh;
-
-        background: 
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:414px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:9.2rem;
-    transform:rotate(-30deg) translate(0%, 55vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:15vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-        }
-    }
-}
-
-@media (min-width:540px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:7.5rem;
-    transform:rotate(-30deg) translate(0%, 54.5vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:15vh;
-
-        background:rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:hover{
-        &:before{
-            width:10vh;
-        }
-    }
-}
-
-@media (min-width:768px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:20.9rem;
-    transform:rotate(-30deg) translate(0%, 66.3vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:10vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:before{
-        width:0vh;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-        }
-    }
-}
-
-@media (min-width:820px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:25rem;
-    transform:rotate(-30deg) translate(0%, 67vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:15vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:before{
-        width:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
-            opacity:0;
-        }
-    }
-}
-
-
-@media (min-width:912px){
-    
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.2rem 1.4rem 0.2rem 1.4rem;
-    right:29rem;
-    transform:rotate(-30deg) translate(0%, 67vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:0vh;
-        height:15vh;
-
-        background: rgb(233, 226, 163);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-    &:hover{
-        &:before{
-            width:15vh;
         }
     }
 }
@@ -1634,27 +431,27 @@ export const BotaoLineUp = styled.button`
 `;
 
 export const BotaoContato = styled.button`
-@media (max-width:500px){
+@media (min-width:200px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.5rem 1rem 0.5rem 1rem;
-    right:12rem;
-    transform:rotate(-30deg) translate(0%, 47.6vh);
+    transform:rotate(-30deg) translate(10rem, 4rem);
 
     &:before{
         content:'';
         position:absolute;
-        top:0%;
-        left:0%;
+        top:50%;
+        left:50%;
         border-top-left-radius:50px;
         border-top-right-radius:50px;
         border-bottom-left-radius:50px;
         border-bottom-right-radius:50px;
+        transform:translate(-50%, -50%);
 
         width:100%;
         height:0%;
@@ -1672,108 +469,21 @@ export const BotaoContato = styled.button`
     }
 }
 
-@media (min-width:280px){
+@media (max-width:1024px){
 
     background-color:transparent;
     font-size:1.rem;
     color:white;
     border:0px solid white;
-
     cursor:pointer;
-    position:absolute;
+    position:relative;
     padding:0.5rem 1rem 0.5rem 1rem;
-    right:-5.6rem;
-    transform:rotate(-30deg) translate(0%, 36vh);
-    z-index:100;
+    transform:rotate(-30deg) translate(4.3rem, -18rem);
 
     &:before{
         content:'';
         position:absolute;
         top:50%;
-        left:50%;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:360px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.4rem;
-    transform:rotate(-30deg) translate(0%, 47vh);
-    z-index:100;
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        width:15vh;
-        height:20vh;
-
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        transform:translate(-50%, -50%);
-
-        background:rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            height:20vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:375px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.3rem;
-    transform:rotate(-30deg) translate(0%, 47vh);
-    z-index:100;
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:40%;
         left:50%;
         border-top-left-radius:50px;
         border-top-right-radius:50px;
@@ -1781,304 +491,18 @@ export const BotaoContato = styled.button`
         border-bottom-right-radius:50px;
         transform:translate(-50%, -50%);
 
-        width:15vh;
-        height:20vh;
+        width:200%;
+        height:0%;
 
-        background:rgb(161, 51, 87);
+        background: rgb(161, 51, 87);
         z-index:-1;
         transition:all 0.7s;
     }
 
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
     &:hover{
         &:before{
-            height:20vh;
+            height:300%;
             opacity:0;
-        }
-    }
-
-}
-
-@media (min-width:390px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.5rem;
-    transform:rotate(-30deg) translate(0%, 48vh);
-    z-index:100;
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-        }
-    }
-}
-
-@media (min-width:412px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.8rem;
-    transform:rotate(-30deg) translate(0%, 47.9vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-
-        width:15vh;
-        height:0vh;
-
-        background:  rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    $:before{
-        height:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            height:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:414px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.6rem;
-    transform:rotate(-30deg) translate(0%, 47.9vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:20vh;
-        }
-    }
-}
-
-@media (min-width:540px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:-3.9rem;
-    transform:rotate(-30deg) translate(0%, 47.9vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-        }
-    }
-}
-
-@media (min-width:768px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:6.5rem;
-    transform:rotate(-30deg) translate(0%, 59.7vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
-        }
-    }
-}
-
-@media (min-width:820px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:7.5rem;
-    transform:rotate(-30deg) translate(0%, 59.7vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-
-        background:rgb(161, 51, 87);
-        width:15vh;
-        height:0vh;
-
-        background: 
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:before{
-        height:0vh;
-        opacity:1;
-    }
-    &:hover{
-        &:before{
-            height:15vh;
-            opacity:0;
-        }
-    }
-}
-
-@media (min-width:912px){
-
-    background-color:transparent;
-    font-size:1.rem;
-    color:white;
-    border:0px solid white;
-    
-    cursor:pointer;
-    position:absolute;
-    padding:0.5rem 1rem 0.5rem 1rem;
-    right:9.5rem;
-    transform:rotate(-30deg) translate(0%, 59.7vh);
-
-    &:before{
-        content:'';
-        position:absolute;
-        top:50%;
-        left:50%;
-        
-        border-top-left-radius:50px;
-        border-top-right-radius:50px;
-        border-bottom-left-radius:50px;
-        border-bottom-right-radius:50px;
-        width:15vh;
-        height:0vh;
-
-        background: rgb(161, 51, 87);
-        z-index:-1;
-        transition:all 0.7s;
-    }
-
-    &:hover{
-        &:before{
-            height:15vh;
         }
     }
 }
