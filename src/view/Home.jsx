@@ -1,15 +1,11 @@
 import PolaroidsGrid from "../components/PolaroidsGrid";
-import Menu from "../components/Menu/index";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <>
       <PolaroidsGrid />
-      <Menu>
-        /*A tag esta sendo manipulada para alojar o codigo 
-        que expressa otimamente a logica regular da animacao
-        do menu */
-      </Menu>
+      <Navbar/>
     </>
   )
 }
