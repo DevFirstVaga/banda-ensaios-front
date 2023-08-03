@@ -1,11 +1,10 @@
 import PolaroidsGrid from "../components/PolaroidsGrid";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Header";
 
 function Home() {
   return (
     <>
       <PolaroidsGrid />
-      <Navbar/>
     </>
   )
 }
