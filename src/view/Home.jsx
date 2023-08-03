@@ -1,4 +1,7 @@
 import PolaroidsGrid from "../components/PolaroidsGrid";
+
+import Navbar from "../components/Navbar";
+
 import Logo from "../components/Logo";
 
 function Home() {
@@ -6,8 +9,9 @@ function Home() {
     <main>
       <Logo />
       <PolaroidsGrid />
+      <Navbar />
     </main>
-  )
+  );
 }
 
 export default Home;
