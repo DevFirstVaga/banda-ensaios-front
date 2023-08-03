@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { theme } from "../../theme/theme";
+import theme from "../../theme/theme";
 
 export const Wrapper = styled.header`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 20px 20px 0;
   div{
     z-index: 2;
     cursor: pointer;
