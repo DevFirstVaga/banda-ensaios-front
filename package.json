@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "axios": "^1.4.0",
+=======
+    "framer-motion": "^10.13.1",
+>>>>>>> e9c67c27ab7785dfeb695a552b3dc83212be76f4
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
