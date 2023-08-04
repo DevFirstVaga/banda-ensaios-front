@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
-import { theme } from "../../theme/theme";
+import theme from "../../theme/theme";
 
 export const Wrapper = styled.div`
   background-color: ${theme.colors.primary};
   display: grid;
+  overflow: hidden;
   grid-template-columns: repeat(2, 170px);
   grid-template-rows: repeat(2, 160px);
   place-items: center;

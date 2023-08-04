@@ -1,4 +1,4 @@
-import { theme } from './theme'
+import theme from './theme'
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
@@ -8,7 +8,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body{
-    background-color: ${theme.colors.black}
+    background-color: ${theme.colors.black};
+  }
+  main{
+    margin-top: 20px;
+    height: 3000px
   }
 `
 
