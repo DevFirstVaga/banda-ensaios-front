@@ -4,7 +4,7 @@ import theme from "../../theme/theme"
 export const Wrapper = styled.div`
   ${({ photo }) => css`
     background-color: ${theme.colors.gray};
-    background-image: url("/src/images/tour.jpeg");
+    background-image: url("/images/tour.jpeg");
     background-color: ${theme.colors.blackTransp};
     background-repeat: no-repeat;
     background-size: cover;
