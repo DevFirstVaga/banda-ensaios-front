@@ -3,7 +3,7 @@ import theme from "../../theme/theme";
 
 export const Wrapper = styled.header`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 20px 0;
   div{
@@ -30,6 +30,7 @@ export const Wrapper = styled.header`
     font-weight: 500;
     background-color: ${theme.colors.black};
     height: 100%;
+    overflow: hidden;
     width: 100%;
     transition: all .3s ease;
     ul{

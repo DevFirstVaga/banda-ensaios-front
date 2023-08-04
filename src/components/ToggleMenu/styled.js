@@ -11,17 +11,17 @@ export const Wrapper = styled.div`
   }
 
   &.active i::before {
-    transform: translateY(10px) rotate(-45deg);
+    transform: translateY(10px) rotate(45deg);
   }
 
   &.active i::after {
-    transform: translateY(-10px) rotate(45deg);
+    transform: translateY(-10px) rotate(-45deg);
   }
 
   i {
   position: absolute;
   width: 90%;
-  left: 5px;
+  left: 2px;
   height: 5px;
   background-color:  ${theme.colors.white};
   top: calc(50% - 2.5px);

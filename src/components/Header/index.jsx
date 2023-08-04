@@ -7,6 +7,12 @@ function Header() {
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => setToggle(toggle => !toggle);
 
+  if(toggle){
+    document.body.style.overflow = "hidden";
+  } else{
+    document.body.style.overflow = "initial";
+  }
+
   return (
     <S.Wrapper>
       <div onClick={toggleHandler}>
