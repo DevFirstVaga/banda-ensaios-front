@@ -1,4 +1,5 @@
 import Logo from "../components/Logo";
+import Link from "../components/Link";
 import PolaroidsGrid from "../components/PolaroidsGrid";
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <Logo/>
       <PolaroidsGrid />
+      <Link>Sobre a Banda</Link>
     </>
   )
 }
