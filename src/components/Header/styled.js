@@ -15,6 +15,18 @@ export const Wrapper = styled.header`
       color: ${theme.colors.white};
     }
   }
+  .icons{
+    display: flex;
+    gap: 15px;
+    a{
+      svg{
+        font-size: 25px;
+          &:hover{
+            color: ${theme.colors.primary};
+          }
+      }
+    }
+  }
   nav{
     z-index: 1;
     display: flex;
