@@ -1,33 +1,60 @@
 import { useState } from "react";
 import * as S from "./styled";
-import { BsList, BsX } from "react-icons/bs"
+import { motion, AnimatePresence } from "framer-motion"
 import ToggleMenu from "../ToggleMenu";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => setToggle(toggle => !toggle);
 
-  if(toggle){
-    document.body.style.overflow = "hidden";
-  } else{
-    document.body.style.overflow = "initial";
-  }
+  if (toggle) document.body.style.overflow = "hidden";
+  else document.body.style.overflow = "initial";
 
   return (
     <S.Wrapper>
       <div onClick={toggleHandler}>
-        <ToggleMenu/>
+        <ToggleMenu />
       </div>
-        {toggle &&
-      <nav>
+      <AnimatePresence>
+      {toggle &&
+        <motion.nav
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <motion.li
+              initial={{ x: -60 }}
+              animate={{ x: 0 }}
+            >
+              <a href="#">Sobre a Banda</a>
+            </motion.li>
+
+            <motion.li
+
+              initial={{ x: 60 }}
+              animate={{ x: 0 }}
+            >
+              <a href="#">Galeria</a>
+            </motion.li>
+
+            <motion.li
+              initial={{ x: -60 }}
+              animate={{ x: 0 }}
+            >
+              <a href="#">Nossas Músicas</a>
+            </motion.li>
+
+            <motion.li
+              initial={{ x: 60 }}
+              animate={{ x: 0 }}
+            >
+              <a href="#">Contato</a>
+            </motion.li>
           </ul>
-      </nav>
-        }
+        </motion.nav>
+      }
+      </AnimatePresence>
     </S.Wrapper>
   );
 }

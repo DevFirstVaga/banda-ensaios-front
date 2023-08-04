@@ -11,8 +11,8 @@ const theme = {
     display: "Ubuntu, display",
     primary: "Roboto, sans-serif",
     size: {
-      text: "1.6rem",
-      sectionTitle: "2.4rem",
+      text: "22px",
+      links: "31px",
       title: "2.8rem",
     },
     weight: {
