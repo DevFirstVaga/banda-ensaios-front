@@ -5,7 +5,12 @@ export const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 0;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: ${theme.colors.blackTransp};
+
   div{
     z-index: 2;
     cursor: pointer;
@@ -28,7 +33,6 @@ export const Wrapper = styled.header`
     }
   }
   nav{
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +40,7 @@ export const Wrapper = styled.header`
     top: 0;
     right: 0;
     background-color: ${theme.colors.black};
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     width: 100%;
     ul{
