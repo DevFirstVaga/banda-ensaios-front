@@ -3,7 +3,7 @@ import * as S from "./styled"
 function Link({children}) {
   return(
     <S.Wrapper>
-      <a href="#">{children}</a>
+      <a draggable="false" href="#">{children}</a>
     </S.Wrapper>
   )
 }

@@ -52,6 +52,7 @@ export const Wrapper = styled.header`
         text-transform: uppercase;
         font-weight: 500;
         user-select: none;
+        /* -webkit-user-drag: none; */
         a{
           padding: 5px;
           display: block;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as S from "./styled";
 import { motion, AnimatePresence } from "framer-motion"
-import ToggleMenu from "../ToggleMenu";
+import ToggleMenu from "./ToggleMenu";
 import { BsSpotify, BsInstagram, BsYoutube } from "react-icons/bs"
 
 function Header() {
@@ -12,8 +12,11 @@ function Header() {
 
   return (
     <S.Wrapper>
-      <div onClick={toggleHandler}>
-        <ToggleMenu />
+      <div
+        onClick={toggleHandler}
+        aria-pressed={toggle}
+      >
+        <ToggleMenu as="button"/>
       </div>
       <div className="icons">
         <a href="#">
@@ -38,14 +41,14 @@ function Header() {
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a href="#">Home</a>
+                <a draggable="false" href="#">Home</a>
               </motion.li>
 
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
               >
-                <a href="#">Sobre a Banda</a>
+                <a draggable="false" href="#">Sobre a Banda</a>
               </motion.li>
 
               <motion.li
@@ -53,21 +56,21 @@ function Header() {
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a href="#">Galeria</a>
+                <a draggable="false" href="#">Galeria</a>
               </motion.li>
 
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
               >
-                <a href="#">Nossas Músicas</a>
+                <a draggable="false" href="#">Nossas Músicas</a>
               </motion.li>
 
               <motion.li
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a href="#">Contato</a>
+                <a draggable="false" href="#">Contato</a>
               </motion.li>
             </ul>
           </motion.nav>
