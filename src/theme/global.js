@@ -9,10 +9,10 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${theme.colors.black};
-    height: 3000px
   }
   main{
     margin-top: 20px;
+    height: 3000px
   }
 `
 
