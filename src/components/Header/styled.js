@@ -43,7 +43,7 @@ export const Wrapper = styled.header`
       list-style: none;
       text-align: center;
       li{
-        font-size: ${theme.fonts.size.links};
+        font-size: ${theme.fonts.size.link};
         font-family: ${theme.fonts.display};
         text-transform: uppercase;
         font-weight: 500;

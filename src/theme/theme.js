@@ -12,8 +12,8 @@ const theme = {
     primary: "Roboto, sans-serif",
     size: {
       text: "22px",
-      links: "31px",
-      title: "2.8rem",
+      link: "31px",
+      title: "28px",
     },
     weight: {
       regular: "400",
