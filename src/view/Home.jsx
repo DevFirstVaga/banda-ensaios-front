@@ -1,16 +1,14 @@
-import PolaroidsGrid from "../components/PolaroidsGrid";
-import Navbar from "../components/Navbar";
 import Logo from "../components/Logo";
 import Link from "../components/Link";
+import PolaroidsGrid from "../components/PolaroidsGrid";
 
 function Home() {
   return (
-    <main>
-      <Logo />
+    <>
+      <Logo/>
       <PolaroidsGrid />
-      <Navbar />
       <Link>Sobre a Banda</Link>
-    </main>
+    </>
   )
 }
 
