@@ -9,10 +9,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${theme.colors.black};
-  }
-  main{
-    margin-top: 20px;
-    height: 3000px
+    *:focus{
+      outline-color: ${theme.colors.primary};
+    }
+    main{
+      margin-top: 20px;
+      height: 3000px
+    }
   }
 `
 

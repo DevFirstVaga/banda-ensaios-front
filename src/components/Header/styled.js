@@ -8,12 +8,11 @@ export const Wrapper = styled.header`
   padding: 20px;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 2;
   background-color: ${theme.colors.blackTransp};
 
   div{
     z-index: 2;
-    cursor: pointer;
     svg{
       font-size: 40px;
       display: block;
