@@ -16,7 +16,7 @@ function Header() {
         onClick={toggleHandler}
         aria-pressed={toggle}
       >
-        <ToggleMenu as="button"/>
+        <ToggleMenu/>
       </div>
       <div className="icons">
         <a href="#">
