@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components"
-import theme from "../../theme/theme"
+import theme from "../../../theme/theme"
 
 export const Wrapper = styled.div`
-  ${({ photo }) => css`
+  ${({ image }) => css`
     background-color: ${theme.colors.gray};
-    background-image: url("/images/tour.jpeg");
+    background-image: url(${image});
     background-color: ${theme.colors.blackTransp};
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
     &::after{
         display: block;
         opacity: .5;

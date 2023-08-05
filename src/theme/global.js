@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     }
     main{
       margin-top: 20px;
-      height: 3000px
+      /* height: 3000px */
     }
   }
 `
