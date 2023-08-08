@@ -2,6 +2,7 @@ const theme = {
   colors: {
     black: "#080808",
     black0: "#000000",
+    blackTransp: "#080808AA",
     white: "#EAEAEA",
     white0: "#FFFFFF",
     gray: "#717568",
@@ -11,9 +12,9 @@ const theme = {
     display: "Ubuntu, display",
     primary: "Roboto, sans-serif",
     size: {
-      text: "1.6rem",
-      sectionTitle: "2.4rem",
-      title: "2.8rem",
+      text: "22px",
+      link: "31px",
+      title: "28px",
     },
     weight: {
       regular: "400",
