@@ -10,22 +10,33 @@ function Header() {
   if (toggle) document.body.style.overflow = "hidden";
   else document.body.style.overflow = "initial";
 
+  const closeMenu = () => document.querySelector("button").click()
+
   return (
     <S.Wrapper>
       <div
         onClick={toggleHandler}
         aria-pressed={toggle}
-      >
+        >
         <ToggleMenu/>
       </div>
-      <div className="icons">
-        <a href="#">
+      <div className="social-links">
+        <a
+          href="https://open.spotify.com"
+          target="_blank"
+        >
           <BsSpotify />
         </a>
-        <a href="#">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+        >
           <BsInstagram />
         </a>
-        <a href="#">
+        <a
+          href="https://youtube.com"
+          target="_blank"
+        >
           <BsYoutube />
         </a>
       </div>
@@ -41,14 +52,24 @@ function Header() {
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="/">Home</a>
+                <a
+                  draggable="false"
+                  href="/"
+                >
+                  Home
+                </a>
               </motion.li>
 
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="#">Sobre a Banda</a>
+                <a
+                  draggable="false"
+                  href="/sobre"
+                >
+                  Sobre a Banda
+                </a>
               </motion.li>
 
               <motion.li
@@ -56,21 +77,37 @@ function Header() {
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="#">Galeria</a>
+                <a
+                  draggable="false"
+                  href="/galeria"
+                >
+                  Galeria
+                </a>
               </motion.li>
 
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="#">Nossas Músicas</a>
+                <a
+                  draggable="false"
+                  href="/musicas"
+                >
+                  Nossas Músicas
+                </a>
               </motion.li>
 
               <motion.li
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="#">Contato</a>
+                <a
+                  draggable="false"
+                  href="/#footer"
+                  onClick={closeMenu}
+                >
+                  Contato
+                </a>
               </motion.li>
             </ul>
           </motion.nav>

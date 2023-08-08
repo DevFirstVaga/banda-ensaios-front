@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${theme.colors.black};
+    color: ${theme.colors.white};
+    font-family: ${theme.fonts.primary};
     *:focus{
       outline-color: ${theme.colors.primary};
     }

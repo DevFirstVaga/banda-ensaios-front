@@ -20,7 +20,7 @@ export const Wrapper = styled.header`
       color: ${theme.colors.white};
     }
   }
-  .icons{
+  .social-links{
     display: flex;
     gap: 15px;
     a{
