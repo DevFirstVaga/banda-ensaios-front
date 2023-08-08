@@ -41,7 +41,7 @@ function Header() {
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
-                <a draggable="false" href="#">Home</a>
+                <a draggable="false" href="/">Home</a>
               </motion.li>
 
               <motion.li
