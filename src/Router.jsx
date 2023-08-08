@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./view/Home";
-import { DashBoard } from "./view/CMS/DashBoard";
+import { DashBoard } from "./view/CMS";
 
 function Router() {
   return (
