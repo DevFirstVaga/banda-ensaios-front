@@ -6,19 +6,19 @@ function Links(){
     <S.Wrapper>
       <Link
         link="https://example.org" 
-        image="/src/images/sobre-a-banda.jpeg"
+        image="/images/links/sobre-a-banda.jpeg"
       >
         Sobre a Banda
       </Link>
       <Link
         link="https://example.org" 
-        image="/src/images/nossas-musicas.jpeg"
+        image="/images/links/nossas-musicas.jpeg"
       >
         Nossas Músicas
       </Link>
       <Link
         link="https://example.org" 
-        image="/src/images/galeria.jpeg"
+        image="/images/links/galeria.jpeg"
       >
         Galeria
       </Link>
