@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   ${({ image }) => css`
     background-color: ${theme.colors.gray};
     background-image: url(${image});
-    background-color: ${theme.colors.blackTransp};
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

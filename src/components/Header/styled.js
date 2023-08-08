@@ -10,6 +10,7 @@ export const Wrapper = styled.header`
   top: 0;
   z-index: 2;
   background-color: ${theme.colors.blackTransp};
+  backdrop-filter:  blur(4px);
 
   div{
     z-index: 2;

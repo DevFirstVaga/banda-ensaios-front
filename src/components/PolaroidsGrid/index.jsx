@@ -5,19 +5,23 @@ function PolaroidsGrid(){
   return(
     <S.Wrapper>
       <Polaroid
-        src="/images/polaroid1.jpg"
+        src="/images/polaroids/1.jpg"
+        alt="imagem de ''"
         transform="rotate(-16deg)"
       />
       <Polaroid
-        src="/images/polaroid2.jpg"
+        src="/images/polaroids/2.jpg"
+        alt="imagem de ''"
         transform="rotate(5deg)"
       />
       <Polaroid
-        src="/images/polaroid3.jpg"
+        src="/images/polaroids/3.jpg"
+        alt="imagem de ''"
         transform="rotate(15deg)"
       />
       <Polaroid
-        src="/images/polaroid4.jpg"
+        src="/images/polaroids/4.jpg"
+        alt="imagem de ''"
         transform="rotate(-15deg)"
       />
     </S.Wrapper>
