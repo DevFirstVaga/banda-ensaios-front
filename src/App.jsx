@@ -9,9 +9,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Header/>
-      <main>
         <Router />
-      </main>
     </ThemeProvider>
   )
 }
