@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
       display: block;
     }
   }
-  html, body, section{
+  html, body, section, footer{
     block-size: 100%;
   }
   html{
