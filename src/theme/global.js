@@ -6,8 +6,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    svg{
+      display: block;
+    }
   }
-  html, body, section{
+  html, body, section, footer{
     block-size: 100%;
   }
   html{
@@ -15,11 +18,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: ${theme.colors.black};
+    color: ${theme.colors.white};
+    font-family: ${theme.fonts.primary};
     *:focus{
       outline-color: ${theme.colors.primary};
     }
   }
-  section{
+  section, footer{
     height: 100vh;
     scroll-behavior: smooth;
     scroll-snap-align: start;
