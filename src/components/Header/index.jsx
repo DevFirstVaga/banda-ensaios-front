@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as S from "./styled";
 import { motion, AnimatePresence } from "framer-motion"
 import ToggleMenu from "./ToggleMenu";
-import { BsSpotify, BsInstagram, BsYoutube } from "react-icons/bs"
+import SocialLinks from "../SocialLinks";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -20,26 +20,7 @@ function Header() {
         >
         <ToggleMenu/>
       </div>
-      <div className="social-links">
-        <a
-          href="https://open.spotify.com"
-          target="_blank"
-        >
-          <BsSpotify />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-        >
-          <BsInstagram />
-        </a>
-        <a
-          href="https://youtube.com"
-          target="_blank"
-        >
-          <BsYoutube />
-        </a>
-      </div>
+      <SocialLinks />
       <AnimatePresence>
         {toggle &&
           <motion.nav

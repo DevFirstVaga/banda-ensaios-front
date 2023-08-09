@@ -16,7 +16,6 @@ export const Wrapper = styled.header`
     z-index: 2;
     svg{
       font-size: 40px;
-      display: block;
       color: ${theme.colors.white};
     }
   }

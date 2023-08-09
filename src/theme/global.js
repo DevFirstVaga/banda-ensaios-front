@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    svg{
+      display: block;
+    }
   }
   html, body, section{
     block-size: 100%;
@@ -21,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
       outline-color: ${theme.colors.primary};
     }
   }
-  section{
+  section, footer{
     height: 100vh;
     scroll-behavior: smooth;
     scroll-snap-align: start;
