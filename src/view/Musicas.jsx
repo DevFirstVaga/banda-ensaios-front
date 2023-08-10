@@ -1,6 +1,12 @@
+import Banner from "../components/Banner";
+
 function Musicas(){
   return(
-    <h1>Musicas</h1>
+    <>
+      <Banner
+        image="/images/links/nossas-musicas.jpg"
+      />
+    </>
   )
 }
 

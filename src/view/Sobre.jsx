@@ -1,6 +1,12 @@
-function Sobre(){
+import Banner from "../components/Banner";
+
+function Sobre({image}){
   return(
-    <h1>Sobre</h1>
+    <>
+      <Banner
+        image="/images/links/sobre-a-banda.jpg"
+      />
+    </>
   )
 }
 
