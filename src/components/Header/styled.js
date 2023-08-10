@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import theme from "../../theme/theme";
 
 export const Wrapper = styled.header`
@@ -14,22 +14,6 @@ export const Wrapper = styled.header`
 
   div{
     z-index: 2;
-    svg{
-      font-size: 40px;
-      color: ${theme.colors.white};
-    }
-  }
-  .social-links{
-    display: flex;
-    gap: 15px;
-    a{
-      svg{
-        font-size: 25px;
-          &:hover{
-            color: ${theme.colors.primary};
-          }
-      }
-    }
   }
   nav{
     display: flex;
@@ -51,7 +35,6 @@ export const Wrapper = styled.header`
         text-transform: uppercase;
         font-weight: 500;
         user-select: none;
-        /* -webkit-user-drag: none; */
         a{
           padding: 5px;
           display: block;
