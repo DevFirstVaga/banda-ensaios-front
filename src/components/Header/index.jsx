@@ -84,7 +84,7 @@ function Header() {
               >
                 <a
                   draggable="false"
-                  href="/#footer"
+                  href={window.location.pathname + `#footer`}
                   onClick={closeMenu}
                 >
                   Contato

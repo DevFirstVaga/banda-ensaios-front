@@ -1,6 +1,12 @@
+import Banner from "../components/Banner";
+
 function Galeria(){
   return(
-    <h1>Galeria</h1>
+    <>
+      <Banner
+        image="/images/links/galeria.jpg"
+      />
+    </>
   )
 }
 

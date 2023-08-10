@@ -1,8 +1,10 @@
 import * as S from "./styled";
 
-function Banner() {
+function Banner({image}) {
   return (
-    <S.Wrapper />
+    <S.Wrapper
+      image={image}
+    />
   );
 }
 
