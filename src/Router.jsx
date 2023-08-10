@@ -14,7 +14,6 @@ function Router() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/musicas" element={<Musicas />} />
-        <Route path="/cms" element={<DashBoard />} />
         <Route path="*" element={<h1>path = Not Found</h1>} />
       </Routes>
     </BrowserRouter>

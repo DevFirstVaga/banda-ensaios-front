@@ -1,5 +1,5 @@
 import theme from './theme'
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -24,11 +24,13 @@ const GlobalStyle = createGlobalStyle`
       outline-color: ${theme.colors.primary};
     }
   }
-  section, footer{
-    height: 100vh;
-    scroll-behavior: smooth;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+  ${() => window.location.pathname === "/" && css`
+    section, footer{
+      height: 100vh;
+      scroll-behavior: smooth;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }`
   }
 `
 
