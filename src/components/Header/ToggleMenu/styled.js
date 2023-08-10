@@ -8,6 +8,7 @@ export const Wrapper = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 2;
 
   &.active i {
     background: transparent;

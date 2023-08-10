@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
       outline-color: ${theme.colors.primary};
     }
   }
-  ${() => window.location.pathname === "/" && css`
+  ${() => window.location.pathname === "/" && css` 
     section, footer{
       height: 100vh;
       scroll-behavior: smooth;

@@ -7,17 +7,16 @@ import SocialLinks from "../SocialLinks";
 function Header() {
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => setToggle(toggle => !toggle);
+  const closeMenu = () => document.querySelector("button").click()
   if (toggle) document.body.style.overflow = "hidden";
   else document.body.style.overflow = "initial";
-
-  const closeMenu = () => document.querySelector("button").click()
 
   return (
     <S.Wrapper>
       <div
         onClick={toggleHandler}
         aria-pressed={toggle}
-        >
+      >
         <ToggleMenu/>
       </div>
       <SocialLinks />
@@ -40,7 +39,6 @@ function Header() {
                   Home
                 </a>
               </motion.li>
-
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
@@ -52,9 +50,7 @@ function Header() {
                   Sobre a Banda
                 </a>
               </motion.li>
-
               <motion.li
-
                 initial={{ x: 80 }}
                 animate={{ x: 0 }}
               >
@@ -65,7 +61,6 @@ function Header() {
                   Galeria
                 </a>
               </motion.li>
-
               <motion.li
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
@@ -91,8 +86,7 @@ function Header() {
                 </a>
               </motion.li>
             </ul>
-          </motion.nav>
-        }
+          </motion.nav>}
       </AnimatePresence>
     </S.Wrapper>
   );
