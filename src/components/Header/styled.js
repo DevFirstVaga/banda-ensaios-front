@@ -7,6 +7,10 @@ export const Wrapper = styled.header`
   align-items: center;
   padding: 20px;
   position: sticky;
+  ${() => window.location.pathname !== "/" && css`
+    position: fixed;
+    width: 100%;
+  ` }
   top: 0;
   z-index: 2;
   background-color: ${theme.colors.blackTransp};
