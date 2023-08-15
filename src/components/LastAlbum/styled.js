@@ -8,6 +8,14 @@ export const Wrapper = styled.div`
   box-sizing: content-box;
   text-align: center;
   transition: all .3s ease;
+  &:hover{
+    box-shadow: 0 2px 5px #FFFFFFAA;
+    transform: translateY(-8px);
+  }
+  img{
+    width: 300px;
+    display: block;
+  }
   div{
     h2{
     font-family: ${theme.fonts.display};
