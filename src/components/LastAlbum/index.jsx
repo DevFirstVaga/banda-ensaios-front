@@ -1,6 +1,5 @@
 import * as S from "./styled"
 import { BsSpotify, BsYoutube } from "react-icons/bs";
-import Album from "./Album";
 import Button from "../Button";
 
 function LastAlbum({image, imgDesc, albumName, desc}){
