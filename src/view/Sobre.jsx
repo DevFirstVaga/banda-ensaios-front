@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 
-function Sobre({image}){
+function Sobre(){
   return(
     <>
       <Banner

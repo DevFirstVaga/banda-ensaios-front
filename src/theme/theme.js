@@ -7,6 +7,7 @@ const theme = {
     white0: "#FFFFFF",
     gray: "#717568",
     primary: "#E5D70D",
+    linearPri: "linear-gradient(#E5D70D, #A19709)",
   },
   fonts: {
     display: "Ubuntu, display",
