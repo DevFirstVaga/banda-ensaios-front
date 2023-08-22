@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import Quote from "../components/Quote";
+import AboutImgAndQuote from "../components/AboutImgAndQuote"
 
 function Sobre() {
   return (
@@ -7,12 +7,15 @@ function Sobre() {
       <Banner
         image="/images/links/sobre-a-banda.jpg"
       />
-      <Quote quote={
-        <>
-          <strong>É preciso muito amor pra poder pulsar. É preciso paz pra poder sorrir. É preciso a chuva para florir."</strong> Cazuza (Música: "O Tempo Não Para")
-        </>
-      } />
-
+      <AboutImgAndQuote
+        image="/images/about/about.jpg"
+        alt="Sobre a Banda"
+        quote={
+          <>
+            <strong>É preciso muito amor pra poder pulsar. É preciso paz pra poder sorrir. É preciso a chuva para florir."</strong> Cazuza (Música: "O Tempo Não Para")
+          </>
+        }
+      />
       
     </>
   );
