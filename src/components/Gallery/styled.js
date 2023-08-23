@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
+  margin: 50px auto;
   gap: 30px;
   padding: 0 20px;
-  max-width: 130  0px;
+  max-width: 1000px;
 `
