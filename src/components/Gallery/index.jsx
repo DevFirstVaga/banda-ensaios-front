@@ -1,3 +1,4 @@
+import Image from "../Image";
 import * as S from "./styled";
 
 function Gallery({ images }) {
@@ -5,7 +6,11 @@ function Gallery({ images }) {
     <S.Wrapper>
       {images.map((image, key) => {
         return(
-          <img key={key} src={`#${image}`} alt={`image ${key}`}/>
+          <Image
+            key={key}
+            image={image}
+            alt={`image ${key}`}
+          />
         )
       })}
     </S.Wrapper>

@@ -8,7 +8,7 @@ function Galeria(){
         image="/images/links/galeria.jpg"
       />
       <Gallery
-        images={["image0", "image1", "image2", "image3"]}
+        images={["image0", "image1", "image2", "image3", "image4", "image5",]}
       />
     </>
   )
