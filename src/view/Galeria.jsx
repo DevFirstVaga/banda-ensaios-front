@@ -8,7 +8,7 @@ function Galeria(){
         image="/images/links/galeria.jpg"
       />
       <Gallery
-        images={["image0", "image1", "image2", "image3", "image4", "image5",]}
+        images={["https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250", "https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250", "https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250",]}
       />
     </>
   )
