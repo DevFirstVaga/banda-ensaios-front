@@ -1,10 +1,15 @@
 import Banner from "../components/Banner";
 import AboutImgAndQuote from "../components/AboutImgAndQuote";
 import Paragraph from "../components/Paragraph";
+import { motion } from "framer-motion";
 
 function Sobre() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Banner
         image="/images/links/sobre-a-banda.jpg"
       />
@@ -20,7 +25,7 @@ function Sobre() {
       <Paragraph>
         Os Vórtex estão de volta com dez músicas em um novo álbum arrebatador. Influentes, importantes e eletrizantes ao vivo, eles são uma banda enraizada no DNA deste país. É impossível imaginar o cenário musical sem eles, desde o impressionante e angular "Turbiões" em 2002 até seu último suspiro, a épica "Cidade Fantasma" em 2004. Eles misturaram o rock alternativo com elementos eletrônicos, preocupações políticas locais com questões mais amplas. A ascensão dos Vórtex foi rápida. Dois anos, sete hits, incluindo dois primeiros lugares, dois álbuns de sucesso, turnês esgotadas – as invasões de palco em massa e a energia do público só adicionaram ao mito. Eles estavam em todos os lugares; na TV, nas rádios, nas baladas e nas festas escolares. Naquela época, a nação parecia mais polarizada do que nunca: cultos jovens de extrema-direita, violência nas ruas, governo conservador. No entanto, o fim deles foi repentino.
       </Paragraph>
-    </>
+    </motion.div>
   );
 }
 
