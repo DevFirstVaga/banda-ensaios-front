@@ -7,4 +7,12 @@ export const Wrapper = styled(LazyLoadImage)`
   object-fit: cover;
   cursor: pointer;
   border-radius: 2px;
-`
+`;
+
+export const WrapperFullScreen = styled(LazyLoadImage)`
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 20px;
+`;
