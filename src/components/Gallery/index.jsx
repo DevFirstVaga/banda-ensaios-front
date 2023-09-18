@@ -1,5 +1,5 @@
 import { BsXCircle } from "react-icons/bs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "../Image";
 import * as S from "./styled";
 import Button from "../Button";
@@ -19,12 +19,23 @@ function Gallery({ images }) {
   };
 
   const nextImg = () => {
-    console.log("next");
+    if (imgData.i < images.length - 1) {
+      setImgData({ img: images[imgData.i + 1], i: imgData.i + 1 });
+    }
   };
 
   const prevImg = () => {
-    console.log("prev");
+    if (imgData.i > 0) {
+      setImgData({ img: images[imgData.i - 1], i: imgData.i - 1 });
+    }
   };
+
+  const handleEscPress = (event) => (event.key === "Escape") && closeGallery()
+
+  useEffect(() => {
+    document.addEventListener("keyup", handleEscPress);
+    return () => document.removeEventListener("keyup", handleEscPress);
+  }, []);
 
   return (
     <>
