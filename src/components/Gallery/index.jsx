@@ -2,6 +2,8 @@ import { BsXCircle } from "react-icons/bs";
 import { useState } from "react";
 import Image from "../Image";
 import * as S from "./styled";
+import Button from "../Button";
+import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 function Gallery({ images }) {
 
@@ -12,24 +14,34 @@ function Gallery({ images }) {
   };
 
   const closeGallery = () => {
-    setImgData({img: "", i: null})
-    document.body.classList.remove("no-scroll")
+    setImgData({ img: "", i: null });
+    document.body.classList.remove("no-scroll");
+  };
+
+  const nextImg = () => {
+    console.log("next");
+  };
+
+  const prevImg = () => {
+    console.log("prev");
   };
 
   return (
     <>
       {imgData.img && (
-        <>
-          <S.FullImageScreen>
-          <S.CloseButton onClick={closeGallery}><BsXCircle/></S.CloseButton>
-            <Image
-              full
-              image={imgData.img}
-            />
-          </S.FullImageScreen>
-        </>
+        <S.FullImageScreen>
+          <Button className="close-btn" variant="gallery-btn" leftIcon={<BsXCircle />} onClick={closeGallery} />
+          <Image
+            full
+            image={imgData.img}
+          />
+          <div className="handle-btns">
+            <Button className="handle-btn" onClick={prevImg} variant="gallery-btn" leftIcon={<VscChevronLeft />} />
+            <Button className="handle-btn" onClick={nextImg} variant="gallery-btn" leftIcon={<VscChevronRight />} />
+          </div>
+        </S.FullImageScreen>
       )}
-      <S.Wrapper>
+      <S.WrapperGallery>
         {images.map((image, key) => {
           return (
             <Image
@@ -40,7 +52,7 @@ function Gallery({ images }) {
             />
           );
         })}
-      </S.Wrapper>
+      </S.WrapperGallery>
     </>
   );
 }

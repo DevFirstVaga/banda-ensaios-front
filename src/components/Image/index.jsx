@@ -4,13 +4,15 @@ import placeholder from "/placeholder.jpg";
 function Image({ image, altImage, onClick, full }) {
 
   if (full) {
-    document.body.classList.add("no-scroll")
+    document.body.classList.add("no-scroll");
     return (
-      <S.WrapperFullScreen
-        src={image}
-        alt={altImage}
-        effect="blur"
-      />
+      <S.WrapperFullImg>
+        <S.FullScreenImg
+          src={image}
+          alt={altImage}
+          effect="blur"
+        />
+      </S.WrapperFullImg>
     );
   }
   return (
@@ -24,4 +26,4 @@ function Image({ image, altImage, onClick, full }) {
   );
 }
 
-export default Image;
+export default Image;;

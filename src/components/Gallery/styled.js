@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const WrapperGallery = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,11 +9,12 @@ export const Wrapper = styled.div`
   gap: 30px;
   padding: 0 20px;
   max-width: 1000px;
-`
+`;
 
 export const FullImageScreen = styled.div`
   position: fixed;
   display: flex;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   top: 0;
@@ -23,24 +24,19 @@ export const FullImageScreen = styled.div`
   background-color: #000000EE;
   backdrop-filter: blur(10px);
   z-index: 3;
+  a.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .handle-btns{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+  }
   span{
     display: flex !important;
     justify-content: center;
     align-items: center;
   }
-`
-
-export const CloseButton = styled.button`
-  background-color: transparent;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 0px;
-  font-size: 32px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  & svg{
-    display: block;
-  }
-`
+`;

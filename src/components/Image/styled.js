@@ -9,10 +9,24 @@ export const Wrapper = styled(LazyLoadImage)`
   border-radius: 2px;
 `;
 
-export const WrapperFullScreen = styled(LazyLoadImage)`
+export const FullScreenImg = styled(LazyLoadImage)`
   width: 90%;
   height: 90%;
   object-fit: cover;
-  cursor: pointer;
-  border-radius: 20px;
+  border-radius: 10px;
+`;
+
+export const WrapperFullImg = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+`;
+
+export const HandleBtn = styled.button`
+
 `;
