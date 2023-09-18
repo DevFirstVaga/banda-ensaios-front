@@ -13,7 +13,7 @@ function Galeria(){
         image="/images/links/galeria.jpg"
       />
       <Gallery
-        images={["https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250", "https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250", "https://source.unsplash.com/featured/300x250", "https://source.unsplash.com/random/300x250",]}
+        images={["/images/gallery/1.jpg", "/images/gallery/2.jpg", "/images/gallery/3.jpg", "/images/gallery/4.jpg", "/images/gallery/5.jpg", "/images/gallery/6.jpg", "/images/gallery/7.jpg", "/images/gallery/8.jpg", "/images/gallery/9.jpg", "/images/gallery/10.jpg", "/images/gallery/11.jpg", "/images/gallery/12.jpg"]}
       />
     </motion.div>
   )
