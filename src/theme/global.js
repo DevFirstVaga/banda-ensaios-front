@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.black};
     color: ${theme.colors.white};
     font-family: ${theme.fonts.primary};
+    &.no-scroll {
+    overflow: hidden !important;
+  }
     *:focus{
       outline-color: ${theme.colors.primary};
     }
