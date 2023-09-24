@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import styled from "styled-components";
 
 export const Wrapper = styled(LazyLoadImage)`
   width: 300px;
@@ -7,13 +7,6 @@ export const Wrapper = styled(LazyLoadImage)`
   object-fit: cover;
   cursor: pointer;
   border-radius: 2px;
-`;
-
-export const FullScreenImg = styled(LazyLoadImage)`
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-  border-radius: 10px;
 `;
 
 export const WrapperFullImg = styled.div`
@@ -27,6 +20,9 @@ export const WrapperFullImg = styled.div`
   }
 `;
 
-export const HandleBtn = styled.button`
-
+export const FullScreenImg = styled(LazyLoadImage)`
+  max-height: 550px;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 10px;
 `;

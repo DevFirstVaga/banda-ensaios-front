@@ -1,9 +1,9 @@
-import { BsXCircle } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import { BsXCircle } from "react-icons/bs";
+import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
+import Button from "../Button";
 import Image from "../Image";
 import * as S from "./styled";
-import Button from "../Button";
-import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 function Gallery({ images }) {
 
@@ -53,7 +53,7 @@ function Gallery({ images }) {
         </S.FullImageScreen>
       )}
       <S.WrapperGallery>
-        {images.map((image, key) => {
+        {images?.map((image, key) => {
           return (
             <Image
               key={key}

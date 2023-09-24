@@ -26,4 +26,4 @@ function Image({ image, altImage, onClick, full }) {
   );
 }
 
-export default Image;;
+export default Image;
