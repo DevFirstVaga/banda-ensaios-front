@@ -30,6 +30,8 @@ export const FullImageScreen = styled.div`
     right: 20px;
   }
   .handle-btns{
+    position: absolute;
+    bottom: 40px;
     margin-top: 20px;
     display: flex;
     gap: 50px;
